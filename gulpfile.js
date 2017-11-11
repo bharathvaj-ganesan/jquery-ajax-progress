@@ -4,6 +4,7 @@ const gulp = require('gulp');
 const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 const pkg = require('./package.json');
+const banner = require('gulp-banner');
 const clean = require('gulp-clean');
 
 const bannerString =
@@ -27,5 +28,10 @@ gulp.task('release', () => {
 		.src('./index.js')
 		.pipe(rename('jquery.ajax.progress.min.js'))
 		.pipe(uglify())
+		.pipe(
+			banner(bannerString, {
+				pkg: pkg
+			})
+		)
 		.pipe(gulp.dest('dist/'));
 });
