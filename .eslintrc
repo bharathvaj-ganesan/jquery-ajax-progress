@@ -1,0 +1,16 @@
+{
+	"env": {
+		"browser": true,
+		"node": true,
+		"jasmine": true,
+		"amd": true
+	},
+	"parserOptions": {
+		"sourceType": "script"
+	},
+	"extends": ["kentcdodds/possible-errors", "kentcdodds/best-practices"],
+	"rules": {
+		"global-require": "off",
+		"strict": "off"
+	}
+}
