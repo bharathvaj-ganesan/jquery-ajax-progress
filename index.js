@@ -18,7 +18,7 @@
 
 				//If not supported, do nothing
 				if (!hasOnProgress) {
-					return;
+					return false;
 				}
 
 				//patch ajax settings to call a progress callback

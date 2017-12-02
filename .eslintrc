@@ -3,7 +3,8 @@
 		"browser": true,
 		"node": true,
 		"jasmine": true,
-		"amd": true
+		"amd": true,
+		"jquery": true
 	},
 	"parserOptions": {
 		"sourceType": "script"

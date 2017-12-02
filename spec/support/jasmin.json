@@ -1,0 +1,6 @@
+{
+	"spec_dir": "spec",
+	"spec_files": ["../progressSpec.js"],
+	"stopSpecOnExpectationFailure": false,
+	"random": false
+}

@@ -6,6 +6,7 @@ const uglify = require('gulp-uglify');
 const pkg = require('./package.json');
 const banner = require('gulp-banner');
 const eslint = require('gulp-eslint');
+const jasmineBrowser = require('gulp-jasmine-browser');
 const clean = require('gulp-clean');
 
 const bannerString =
@@ -42,6 +43,13 @@ gulp.task('lint', () => {
 			// lint error, return the stream and pipe to failAfterError last.
 			.pipe(eslint.failAfterError())
 	);
+});
+
+gulp.task('test', function() {
+	return gulp
+		.src(['./index.js', './spec/progressSpec.js'])
+		.pipe(jasmineBrowser.specRunner())
+		.pipe(jasmineBrowser.server({ port: 8888 }));
 });
 
 gulp.task('release', () => {
