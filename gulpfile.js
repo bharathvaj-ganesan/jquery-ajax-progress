@@ -64,3 +64,7 @@ gulp.task('release', () => {
 		)
 		.pipe(gulp.dest('dist/'));
 });
+
+gulp.task('default', ['lint', 'clean', 'release'], function() {
+	console.log(`Successfully build release ${pkg.version}`);
+});
