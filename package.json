@@ -1,0 +1,20 @@
+{
+  "name": "jquery-ajax-progress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bharathvaj1995/jquery-ajax-progress.git"
+  },
+  "keywords": [],
+  "author": "Bharath <bharathvaj1995@gmail.com> (https://bharathvajganesan.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bharathvaj1995/jquery-ajax-progress/issues"
+  },
+  "homepage": "https://github.com/bharathvaj1995/jquery-ajax-progress#readme"
+}
